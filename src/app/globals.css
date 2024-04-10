@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font Family Lexend Deca Start*/
+
+@font-face {
+  font-family: "Lexend Deca";
+  src: url("/fonts/Lexend_Deca/LexendDeca-Regular.ttf");
+  font-weight: 400;
+  font-display: block;
+}
+@font-face {
+  font-family: "Lexend Deca";
+  src: url("/fonts/Lexend_Deca/LexendDeca-Medium.ttf");
+  font-weight: 500;
+  font-display: block;
+}
+@font-face {
+  font-family: "Lexend Deca";
+  src: url("/fonts/Lexend_Deca/LexendDeca-SemiBold.ttf");
+  font-weight: 600;
+  font-display: block;
+}
+
+/* Font Family Lexend Deca End*/
+
+/* Font Family Inter Start*/
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Regular.ttf");
+  font-weight: 400;
+  font-display: block;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Medium.ttf");
+  font-weight: 500;
+  font-display: block;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-SemiBold.ttf");
+  font-weight: 600;
+  font-display: block;
+}
+
+/* Font Family Inter End*/
+
+/* Font Family Outfit Start*/
+
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/Outfit/Outfit-Regular.ttf");
+  font-weight: 400;
+  font-display: block;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/Outfit/Outfit-Medium.ttf");
+  font-weight: 500;
+  font-display: block;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/Outfit/Outfit-Bold.ttf");
+  font-weight: 700;
+  font-display: block;
+}
+
+/* Font Family Outfit End*/
+
+/* Font Family DM_Sans Start*/
+
+@font-face {
+  font-family: "DM_Sans";
+  src: url("/fonts/DM_Sans/bold.ttf");
+  font-weight: 700;
+  font-display: block;
+}
+
+/* Font Family DM_Sans End*/
+
+.Lexend {
+  font-family: "Lexend Deca";
+}
+.Inter {
+  font-family: "Inter";
+}
+.Outfit {
+  font-family: "Outfit";
+}
+.Dm {
+  font-family: "DM_Sans";
+}
+body {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+}
+
+@layer components {
+  .sideBar_Features {
+    @apply border14 border border-transparent  flex items-end justify-between  px-[0.78125vw] py-[0.57291666666vw];
+  }
+  .sideBar_Features_DropDown_Item {
+    @apply flex gap-x-[0.52083333333vw] items-center py-[0.625vw] pl-[1.40625vw];
+  }
+  .sideBar_Features_DropDown {
+    @apply max-h-0 overflow-hidden flex flex-col gap-y-[0.625vw];
+  }
+  .sideBar_Features_DropDown.active {
+    @apply max-h-[2000px] mt-[0.625vw];
+  }
+  .sideBar_Features,
+  .sideBar_Features span,
+  .sideBar_Features img,
+  .sideBar_Features_DropDown_Item div,
+  .sideBar_Features_DropDown_Item span,
+  .sideBar_Features_DropDown {
+    @apply transition-all duration-300;
+  }
+  .sideBar_Features.active span,
+  .sideBar_Features:hover span {
+    @apply font-[500] text-opacity-[1];
+  }
+  .sideBar_Features.active img,
+  .sideBar_Features:hover img {
+    @apply opacity-[1];
+  }
+  .sideBar_Features_DropDown_Item.active div,
+  .sideBar_Features_DropDown_Item:hover div {
+    @apply bg-[#FE7239];
+  }
+  .sideBar_Features_DropDown_Item.active span,
+  .sideBar_Features_DropDown_Item:hover span {
+    @apply text-[#FE7239] text-opacity-[1] font-[500];
+  }
+  .sideBar_Features.active,
+  .sideBar_Features:hover {
+    @apply bg-[#FE7239]   border-[#FE7239];
+  }
+  .sideBar_Features.active .sideBar_Feature_number,
+  .sideBar_Features:hover .sideBar_Feature_number {
+    @apply bg-white text-[#FE7239];
+  }
+  .text14 {
+    @apply text-[0.72916666666vw] leading-[0.9375vw];
+  }
+  .text12 {
+    @apply text-[0.625vw];
+  }
+  .text20 {
+    @apply text-[1.04166666667vw];
+  }
+  .text24 {
+    @apply text-[1.25vw];
+  }
+  .text26 {
+    @apply text-[1.35416666667vw];
+  }
+  .text32 {
+    @apply text-[1.66666666667vw];
+  }
+  .border6 {
+    @apply rounded-[0.3125vw];
+  }
+  .border12 {
+    @apply rounded-[0.625vw];
+  }
+  .border14 {
+    @apply rounded-[0.72916666666vw];
+  }
+  .border18 {
+    @apply rounded-[0.9375vw];
+  }
+  .border20 {
+    @apply rounded-[1.04166666667vw];
+  }
+}
+
+.sideBar_Profile {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 168px 856px 0px rgba(143, 143, 189, 0.07),
+    0px 37.525px 191.199px 0px rgba(143, 143, 189, 0.04);
+}
+.sideBar_Profile a {
+  border: 1px solid #fff;
+  background: #fff;
+  box-shadow: 0px 6px 29px 0px rgba(89, 108, 148, 0.07),
+    0px 0.751px 3.631px 0px rgba(89, 108, 148, 0.04);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hideScroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hideScroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
