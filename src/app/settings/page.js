@@ -5,7 +5,7 @@ const settingCardData = [
   {
     heading: "Account Settings",
     p: "Provide personal details and how we can reach you",
-    href: "/settings/plans-pricing"
+    href: "/settings/acount-settings"
   },
   {
     heading: "Login & security",
@@ -15,7 +15,7 @@ const settingCardData = [
   {
     heading: "Billing & Payments",
     p: "Review payments, payouts, coupons, and gift cards",
-    href: "/"
+    href: "/settings/plans-pricing"
   },
   {
     heading: "Imported Contacts List",
@@ -25,7 +25,8 @@ const settingCardData = [
   {
     heading: "Notifications",
     p: "Choose notification preferences and how you want to be contacted",
-    href: "/"
+    href: "/settings/notifications",
+
   },
   {
     heading: "Privacy Policy & Terms of Service",

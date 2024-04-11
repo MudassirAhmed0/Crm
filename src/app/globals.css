@@ -157,11 +157,34 @@ body {
   .sideBar_Features:hover .sideBar_Feature_number {
     @apply bg-white text-[#FE7239];
   }
+  .pricingDetail_Card.active {
+    @apply border26 text-white transform translate-y-[-1.35416666667vw] bg-[#FE7239];
+  }
+  .pricingDetail_Card.active span,
+  .pricingDetail_Card.active h4 {
+    @apply text-white;
+  }
+  .pricingDetail_Card.active a {
+    @apply text-[#E5552B] w-full bg-white;
+  }
+  .pricingDetail_Card.active img.white {
+    @apply block;
+  }
+  .pricingDetail_Card.active img.gray {
+    @apply hidden;
+  }
+
   .text14 {
     @apply text-[0.72916666666vw] leading-[0.9375vw];
   }
   .text12 {
     @apply text-[0.625vw];
+  }
+  .text10 {
+    @apply text-[0.52083333333vw];
+  }
+  .text15 {
+    @apply text-[0.78125vw];
   }
   .text16 {
     @apply text-[0.83333333333vw];
@@ -178,11 +201,17 @@ body {
   .text26 {
     @apply text-[1.35416666667vw];
   }
+  .text28 {
+    @apply text-[1.45833333333vw];
+  }
   .text22 {
     @apply text-[1.14583333333vw];
   }
   .text32 {
     @apply text-[1.66666666667vw];
+  }
+  .text36 {
+    @apply text-[1.875vw];
   }
   .t0084 {
     @apply tracking-[-0.004375vw];
@@ -224,6 +253,15 @@ body {
   .border20 {
     @apply rounded-[1.04166666667vw];
   }
+  .border22 {
+    @apply rounded-[1.14583333333vw];
+  }
+  .border29 {
+    @apply rounded-[1.51041666667vw];
+  }
+  .border26 {
+    @apply rounded-[1.35416666667vw];
+  }
 
   .btn {
     @apply border8 text16 t0096 font-[500] py-[0.57291666666vw] px-[1.09375vw];
@@ -236,7 +274,11 @@ body {
     @apply border16 text14 t028;
   }
 }
-
+.month_yearBtn.active {
+  background: #fe7239;
+  color: #fff;
+  position: relative;
+}
 .sideBar_Profile {
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.2);
@@ -248,7 +290,17 @@ body {
   box-shadow: 0px 6px 29px 0px rgba(89, 108, 148, 0.07),
     0px 0.751px 3.631px 0px rgba(89, 108, 148, 0.04);
 }
-
+.upgrade_Btn {
+  /* Shadow/xs */
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+.pricingDetail_Card.active {
+  box-shadow: 0px 42px 34px 0px rgba(234, 158, 116, 0.3);
+}
+.pricing_Details {
+  background: rgba(238, 238, 238, 0.5);
+  backdrop-filter: blur(17.5px);
+}
 .setting_Card {
   background: rgba(255, 255, 255, 0);
   box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.12);
