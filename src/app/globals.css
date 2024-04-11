@@ -96,22 +96,35 @@
 }
 body {
   font-family: "Lexend Deca";
-  font-weight: 400;
+  color: #3b4555;
+}
+.sidebarMainMenu .sidebarMainMenuChevron {
+  transform: rotate(180deg);
 }
 
+.sidebarMainMenu.active .sidebarMainMenuChevron {
+  transform: rotate(0);
+}
+.sidebarMainMenu.active {
+  max-height: 20vw;
+}
 @layer components {
   .sideBar_Features {
     @apply border14 border border-transparent  flex items-end justify-between  px-[0.78125vw] py-[0.57291666666vw];
   }
   .sideBar_Features_DropDown_Item {
-    @apply flex gap-x-[0.52083333333vw] items-center py-[0.625vw] pl-[1.40625vw];
+    @apply flex gap-x-[0.52083333333vw] items-center py-[0.625vw] pl-[1.92708333333vw];
   }
   .sideBar_Features_DropDown {
-    @apply max-h-0 overflow-hidden flex flex-col gap-y-[0.625vw];
+    @apply max-h-0 overflow-hidden flex flex-col gap-y-[0.366vw];
   }
-  .sideBar_Features_DropDown.active {
-    @apply max-h-[2000px] mt-[0.625vw];
+  .dropdownContainer.active .sideBar_Features_DropDown {
+    @apply max-h-[2000px] mt-[0.366vw];
   }
+  .dropdownContainer.active .dropdownChevron {
+    @apply rotate-[180deg];
+  }
+
   .sideBar_Features,
   .sideBar_Features span,
   .sideBar_Features img,
@@ -150,6 +163,9 @@ body {
   .text12 {
     @apply text-[0.625vw];
   }
+  .text16 {
+    @apply text-[0.83333333333vw];
+  }
   .text20 {
     @apply text-[1.04166666667vw];
   }
@@ -159,11 +175,36 @@ body {
   .text26 {
     @apply text-[1.35416666667vw];
   }
+  .text22 {
+    @apply text-[1.14583333333vw];
+  }
   .text32 {
     @apply text-[1.66666666667vw];
   }
+  .t0084 {
+    @apply tracking-[-0.004375vw];
+  }
+  .t0096 {
+    @apply tracking-[-0.005vw];
+  }
+  .t024 {
+    @apply tracking-[-0.0125vw];
+  }
+  .t028 {
+    @apply tracking-[-0.01458333333vw];
+  }
+  .t044 {
+    @apply tracking-[-0.02291666666vw];
+  }
+  .t032 {
+    @apply tracking-[-0.01666666666vw];
+  }
+
   .border6 {
     @apply rounded-[0.3125vw];
+  }
+  .border8 {
+    @apply rounded-[0.41666666666vw];
   }
   .border12 {
     @apply rounded-[0.625vw];
@@ -171,11 +212,25 @@ body {
   .border14 {
     @apply rounded-[0.72916666666vw];
   }
+  .border16 {
+    @apply rounded-[0.83333333333vw];
+  }
   .border18 {
     @apply rounded-[0.9375vw];
   }
   .border20 {
     @apply rounded-[1.04166666667vw];
+  }
+
+  .btn {
+    @apply border8 text16 t0096 font-[500] py-[0.57291666666vw] px-[1.09375vw];
+  }
+  .orangeBtn {
+    @apply bg-[#F57500] text-white hover:bg-opacity-[0.6] transition-all duration-300;
+  }
+
+  .smallBtn {
+    @apply border16 text14 t028;
   }
 }
 
@@ -187,7 +242,6 @@ body {
 }
 .sideBar_Profile a {
   border: 1px solid #fff;
-  background: #fff;
   box-shadow: 0px 6px 29px 0px rgba(89, 108, 148, 0.07),
     0px 0.751px 3.631px 0px rgba(89, 108, 148, 0.04);
 }
