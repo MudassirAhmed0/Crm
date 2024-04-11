@@ -5,61 +5,57 @@ const settingCardData = [
   {
     heading: "Account Settings",
     p: "Provide personal details and how we can reach you",
-    href: "/settings/plans-pricing",
+    href: "/settings/plans-pricing"
   },
   {
     heading: "Login & security",
     p: "Update your password and secure your account",
-    href: "/",
+    href: "/"
   },
   {
     heading: "Billing & Payments",
     p: "Review payments, payouts, coupons, and gift cards",
-    href: "/",
+    href: "/"
   },
   {
     heading: "Imported Contacts List",
     p: "Manage taxpayer information and tax documents",
-    href: "/",
+    href: "/"
   },
   {
     heading: "Notifications",
     p: "Choose notification preferences and how you want to be contacted",
-    href: "/",
+    href: "/"
   },
   {
     heading: "Privacy Policy & Terms of Service",
     p: "Manage your personal data, connected services, and data sharing settings",
-    href: "/",
+    href: "/"
   },
   {
     heading: "Share & Earn",
     p: "You have $0 referral credits and coupon. Learn more.",
-    href: "/",
+    href: "/"
   },
   {
     heading: "Campaign Defaults",
     p: "Set some Default Parameters for the all upcoming campaigns",
-    href: "/",
-  },
-]
-
+    href: "/"
+  }
+];
 
 const Settings = () => {
   return (
     <>
-      <div className="h-full bg-white border18">
-        <div className="flex items-start flex-wrap      gap-x-[12.5520833333vw] gap-y-[3.38541666667vw] py-[2.1875vw] px-[3.125vw]">
-          {
-            settingCardData.map((card, index) => (
-              <Card card={card} key={index} index={index} />
-            ))
-          }
+      <div className="h-full bg-white border18 w-[99%]">
+        <div className="flex items-start flex-wrap      gap-x-[12vw] gap-y-[3.38541666667vw] py-[2.1875vw] px-[3.125vw]">
+          {settingCardData.map((card, index) => (
+            <Card card={card} key={index} index={index} />
+          ))}
         </div>
       </div>
-
     </>
-  )
+  );
 };
 
 export default Settings;

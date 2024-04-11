@@ -4,7 +4,7 @@ import React from "react";
 
 const NotFoundContent = ({ heading, desc, btn }) => {
   return (
-    <div className="flex flex-col items-center justify-center h-full border18 bg-[#fff] w-full">
+    <div className="flex flex-col items-center justify-center h-full border18 bg-[#fff] w-[99%] ">
       <div className="w-[18.75vw] h-[19.6354166667vw] relative">
         <Image src={"/images/icons/not-found.svg"} alt="Not FOund" fill />
       </div>

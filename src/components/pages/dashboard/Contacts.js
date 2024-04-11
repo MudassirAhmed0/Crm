@@ -68,7 +68,10 @@ const Contacts = () => {
             </span>
           </li>
           {table?.map((item, index) => (
-            <li className="flex justify-between px-[1.61458333333vw]">
+            <li
+              key={index}
+              className="flex justify-between px-[1.61458333333vw]"
+            >
               <span className="truncate w-[4.94791666667vw]">{item?.name}</span>
               <div className="flex gap-x-[0.26041666666vw] w-[7.39583333333vw] truncate">
                 <div className="relative w-[1.25vw] h-[1.25vw]">

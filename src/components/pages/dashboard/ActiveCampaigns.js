@@ -60,7 +60,10 @@ const ActiveCampaigns = () => {
             <span className="truncate w-[4.52708333333vw]   ">Date</span>
           </li>
           {table?.map((item, index) => (
-            <li className="flex justify-between px-[1.61458333333vw]">
+            <li
+              className="flex justify-between px-[1.61458333333vw]"
+              key={index}
+            >
               <span className="truncate w-[7.62208333333vw]">{item?.name}</span>
               <div className="flex gap-x-[0.26041666666vw] w-[4.89583333333vw] truncate">
                 <div className="relative w-[1.25vw] h-[1.25vw]">
